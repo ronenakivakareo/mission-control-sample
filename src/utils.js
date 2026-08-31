@@ -14,6 +14,7 @@ export function average(numbers) {
 }
 
 export function displayName(user) {
+  if (!user || !user.name) return "";
   return user.name.toUpperCase();
 }
 
