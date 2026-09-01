@@ -30,3 +30,9 @@ export function truncate(text, maxLength) {
   if (maxLength <= 3) return text.slice(0, maxLength);
   return text.slice(0, maxLength - 3) + "...";
 }
+
+export function clamp(value, min, max) {
+  if (value < min) return min;
+  if (value > max) return max;
+  return value;
+}
