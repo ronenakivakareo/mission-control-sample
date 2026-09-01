@@ -6,6 +6,6 @@ test("displayName returns empty string for null", () => {
   assert.equal(displayName(null), "");
 });
 
-test("displayName returns empty string for empty object", () => {
+test("displayName returns empty string for an object with no name fields", () => {
   assert.equal(displayName({}), "");
 });
